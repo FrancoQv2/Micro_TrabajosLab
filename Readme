@@ -1,0 +1,19 @@
+# Trabajos Prácticos de Laboratorio
+# Sistemas de Microprocesadores y Microcontroladores
+# FACET - UNT
+
+## Compilación
+
+Para compilar un proyecto se debe definir el nombre del archivo con la ruta en el archivo proyecto.mk y después utilizar el comando 'make'
+
+## Simulación
+
+Para simular se deben ejecutar los siguientes comandos:
+
+- renode
+- set path @<ruta_absoluta\renode>
+- include @scripts/lab-micro.resc
+
+## Debugging
+
+Para debuggear y ver paso por paso la ejecución de las instrucciones se debe poner un breakpoint y elegir Renode en el menú de debug antes de comenzar

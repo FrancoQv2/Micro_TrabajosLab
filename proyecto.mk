@@ -1,0 +1,12 @@
+# PROYECTO ?= ejemplos/conversor.s
+# PROYECTO ?= tp_lab1/problema1.s
+# PROYECTO ?= tp_lab1/problema2.s
+# PROYECTO ?= tp_lab1/problema3.s
+# PROYECTO ?= tp_lab1/problema4.s
+# PROYECTO ?= tp_lab1/problema5.s
+# PROYECTO ?= tp_lab1/problema6.s
+# PROYECTO ?= tp_lab1/problema7.s
+# PROYECTO ?= tp_lab1/problema8a.s
+# PROYECTO ?= tp_lab1/problema8b.s
+PROYECTO ?= tp_lab1/eval1_a.s
+# PROYECTO ?= tp_lab1/eval1_b.s
