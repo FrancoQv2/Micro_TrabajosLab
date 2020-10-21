@@ -12,6 +12,7 @@ resultado:
     .section .text
     .global .reset
     .func main
+    
 reset:
     LDR  R0,=vector        //Apunta R0 a la dirección de base
     LDR  R1,=resultado     //Apunto R1 a resultado (pares)
