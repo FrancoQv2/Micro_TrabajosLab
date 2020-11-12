@@ -27,6 +27,8 @@ cpu: CPU.CortexM @ sysbus
     cpuType: "cortex-m4f"
     nvic: nvic
 
+gpio: GPIOPort.LPC43xx_GPIO @ sysbus <0x400F4000, +0x2320>
+
 sysbus:
     init:
         ApplySVD @platforms/cpus/lpc43xx.svd

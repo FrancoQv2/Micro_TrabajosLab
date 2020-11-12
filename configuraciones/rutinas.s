@@ -1,8 +1,8 @@
-/* Copyright 2016, Laboratorio de Microprocesadores 
+/* Copyright 2016-2020, Laboratorio de Microprocesadores 
  * Facultad de Ciencias Exactas y Tecnología 
  * Universidad Nacional de Tucuman
  * http://www.microprocesadores.unt.edu.ar/
- * Copyright 2016, Esteban Volentini <evolentini@gmail.com>
+ * Copyright 2016-2020, Esteban Volentini <evolentini@herrera.unt.edu.ar>
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -31,33 +31,34 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
+
+/****************************************************************************/
+/* Macros para a las rutinas predefinidas en flash para gestion de los leds
+/****************************************************************************/
+
     .equ rutinas,           0x1A000100 + 1
     .equ leds_init,         rutinas
 
-    .equ set_led_r,         rutinas + 0x006C
-    .equ clear_led_r,       rutinas + 0x007C
-    .equ toggle_led_r,      rutinas + 0x008C
+    .equ set_led_r,         rutinas + 0x0058
+    .equ clear_led_r,       rutinas + 0x0068
+    .equ toggle_led_r,      rutinas + 0x0078
 
-    .equ set_led_g,         rutinas + 0x009C
-    .equ clear_led_g,       rutinas + 0x00AC
-    .equ toggle_led_g,      rutinas + 0x00BC
+    .equ set_led_g,         rutinas + 0x0088
+    .equ clear_led_g,       rutinas + 0x0098
+    .equ toggle_led_g,      rutinas + 0x00A8
 
-    .equ set_led_b,         rutinas + 0x00CC
-    .equ clear_led_b,       rutinas + 0x00DC
-    .equ toggle_led_b,      rutinas + 0x00EC
+    .equ set_led_b,         rutinas + 0x00B8
+    .equ clear_led_b,       rutinas + 0x00C8
+    .equ toggle_led_b,      rutinas + 0x00D8
 
-    .equ set_led_1,         rutinas + 0x00FC
-    .equ clear_led_1,       rutinas + 0x010C
-    .equ toggle_led_1,      rutinas + 0x011C
+    .equ set_led_1,         rutinas + 0x00E8
+    .equ clear_led_1,       rutinas + 0x00F8
+    .equ toggle_led_1,      rutinas + 0x0108
 
-    .equ set_led_2,         rutinas + 0x012C
-    .equ clear_led_2,       rutinas + 0x013C
-    .equ toggle_led_2,      rutinas + 0x014C
+    .equ set_led_2,         rutinas + 0x0118
+    .equ clear_led_2,       rutinas + 0x0128
+    .equ toggle_led_2,      rutinas + 0x0138
 
-    .equ set_led_3,         rutinas + 0x015C
-    .equ clear_led_3,       rutinas + 0x016C
-    .equ toggle_led_3,      rutinas + 0x017C
-
-    .equ inicio,            rutinas + 0x01a4
-    .equ escaneo,           rutinas + 0x02c0
-    .equ enviar,            rutinas + 0x033c
+    .equ set_led_3,         rutinas + 0x0148
+    .equ clear_led_3,       rutinas + 0x0158
+    .equ toggle_led_3,      rutinas + 0x0168

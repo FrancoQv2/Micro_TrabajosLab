@@ -5,7 +5,7 @@ $name?="ciaa"
 
 using sysbus
 mach create $name
-machine LoadPlatformDescription @platforms/boards/edu-ciaa-nxp.repl
+machine LoadPlatformDescription @platforms/boards/poncho-unt.repl
 
 $isr?=@scripts/isr_ram.elf
 $bin?=@../binarios/proyecto.elf
@@ -18,3 +18,13 @@ macro reset
 """
 runMacro $reset
 machine StartGdbServer 3333 true
+
+logLevel 3 cpu
+logLevel 3 sysbus
+logLevel -1 gpio.ledr
+logLevel -1 gpio.ledg
+logLevel -1 gpio.ledb
+logLevel -1 gpio.led1
+logLevel -1 gpio.led2
+logLevel -1 gpio.led3
+logLevel -1 gpio.display
