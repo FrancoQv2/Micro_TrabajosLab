@@ -26,14 +26,14 @@
 # PROYECTO ?= tp_lab3/lab3_p3.s
 # PROYECTO ?= tp_lab3/lab3_p4.s
 # PROYECTO ?= tp_lab3/multiplexado.s
-PROYECTO ?= tp_lab3/lab3_eval.s
+# PROYECTO ?= tp_lab3/lab3_eval.s
 
 
 
 
 
 
-# PROYECTO ?= 1er_parcial/1.s
+PROYECTO ?= rec/practica/lab1/q-conversor.s
 # PROYECTO ?= 1er_parcial/1.s
 # PROYECTO ?= 1er_parcial/1.s
 # PROYECTO ?= 1er_parcial/1.s
